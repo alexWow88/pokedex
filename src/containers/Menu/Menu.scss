@@ -17,7 +17,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
 
   &__pokedex-button {
     background-color: rgb(247, 6, 51);
@@ -27,6 +27,7 @@
     padding: 10px 20px;
     animation: glowing-button 2000ms infinite;
     border-radius: 10px;
+    margin: 15px;
 
     @keyframes glowing-button {
       0% {
@@ -52,6 +53,7 @@
     padding: 10px 20px;
     animation: glowing-button 2000ms infinite;
     border-radius: 10px;
+    margin: 15px;
 
     @keyframes glowing-button {
       0% {
