@@ -1,14 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
-import Home from './containers/Home';
-import MainPage from './containers/MainPage/MainPage';
+import "./App.scss";
+import MainPage from "./containers/MainPage/MainPage";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-   <MainPage />
+    <div className="app">
+      <MainPage />
     </div>
   );
-}
+};
 
 export default App;
