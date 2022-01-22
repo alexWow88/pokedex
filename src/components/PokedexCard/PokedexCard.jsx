@@ -3,7 +3,7 @@ import "./PokedexCard.scss";
 import { useState, useEffect } from "react";
 
 const PokedexCard = ({ pokemon }) => {
-  const [pokemonInfo, setPokemonInfo] = useState([]);
+  const [pokemonInfo, setPokemonInfo] = useState(false);
 
   const fetchPokemonInfo = () => {
     fetch(`${pokemon.url}`)
@@ -24,11 +24,7 @@ const PokedexCard = ({ pokemon }) => {
       <div className="pokedexCard">{pokemon.name}</div>
       <img
         className="pokedexCard__img"
-        src={
-          pokemonInfo
-            ? pokemonInfo.sprites.back_default
-            : "https://upload.wikimedia.org/wikipedia/commons/4/4c/Pokeball.png"
-        }
+        src={pokemonInfo ? pokemonInfo.sprites.front_default : ""}
       />
     </>
   );

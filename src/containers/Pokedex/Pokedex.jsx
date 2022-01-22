@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import PokedexCard from "../../components/PokedexCard/PokedexCard";
 
 const Pokedex = () => {
-  const [pokedexList, setPokedexList] = useState([]);
+  const [pokedexList, setPokedexList] = useState(false);
 
   const fetchPokedex = () => {
     fetch("https://pokeapi.co/api/v2/pokemon/")
