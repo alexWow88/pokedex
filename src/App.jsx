@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import "./App.scss";
 import MainPage from "./containers/MainPage/MainPage";
 import Menu from "./containers/Menu/Menu";
+import Pokedex from "./containers/Pokedex/Pokedex";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 const App = () => {
@@ -15,6 +16,7 @@ const App = () => {
     <Router>
       <div className="app">
         <Routes>
+          <Route path="/pokedex" element={<Pokedex />} />
           <Route
             path="/"
             element={
