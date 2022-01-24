@@ -1,0 +1,24 @@
+.menu-button {
+  background-color: #f70633;
+  font-family: "Fredoka One", cursive;
+  color: yellow;
+  font-size: 30px;
+  padding: 10px 20px;
+  animation: glowing-button 2000ms infinite;
+  border-radius: 10px;
+  margin: 15px;
+}
+@keyframes glowing-button {
+  0% {
+    box-shadow: 0 0 10px orange;
+    background-color: #f70633;
+  }
+  50% {
+    box-shadow: 0 0 30px #ff0000;
+    background-color: #f7d306;
+  }
+  100% {
+    box-shadow: 0 0 10px orange;
+    background-color: #f70633;
+  }
+}
