@@ -1,0 +1,28 @@
+.pokemonSize {
+  display: flex;
+  justify-content: space-around;
+
+  &__height {
+    display: flex;
+    flex-direction: column;
+
+    &__label {
+      color: grey;
+    }
+
+    &__number {
+    }
+  }
+
+  &__weight {
+    display: flex;
+    flex-direction: column;
+
+    &__label {
+      color: grey;
+    }
+
+    &__number {
+    }
+  }
+}
