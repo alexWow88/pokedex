@@ -28,9 +28,16 @@ const PokedexCard = ({ pokemon }) => {
           src={pokemonInfo ? pokemonInfo.sprites.front_default : ""}
         />
       </div>
+      <div className="pokedexCard__types">
+        {pokemonInfo ? (
+          pokemonInfo.types.map((item) => <div>{item?.type.name}</div>)
+        ) : (
+          <div></div>
+        )}
+      </div>
       <div className="pokedexCard__size">
         <div className="pokedexCard__size__item">
-          Height: {pokemonInfo.height} in
+          Height: {pokemonInfo.height / 10} m
         </div>
         <div className="pokedexCard__size__item">
           Weight: {pokemonInfo.weight} lb
