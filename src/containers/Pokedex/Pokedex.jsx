@@ -36,7 +36,6 @@ const Pokedex = () => {
         <div className="pokedex-top__center-bottom"></div>
         <div className="pokedex-top__right-bottom"></div>
       </div>
-      <div className="pokedex__header">Pokedex</div>
       {pokedexList
         ? pokedexList.map((pokemon) => <PokedexCard pokemon={pokemon} />)
         : " "}

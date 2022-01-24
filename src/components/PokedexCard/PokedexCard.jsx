@@ -20,13 +20,23 @@ const PokedexCard = ({ pokemon }) => {
   }, []);
 
   return (
-    <>
-      <div className="pokedexCard">{pokemon.name}</div>
-      <img
-        className="pokedexCard__img"
-        src={pokemonInfo ? pokemonInfo.sprites.front_default : ""}
-      />
-    </>
+    <div className="pokedexCard">
+      <div className="pokedexCard__inner">
+        <div className="pokedexCard__name">{pokemon.name.toUpperCase()}</div>
+        <img
+          className="pokedexCard__img"
+          src={pokemonInfo ? pokemonInfo.sprites.front_default : ""}
+        />
+      </div>
+      <div className="pokedexCard__size">
+        <div className="pokedexCard__size__item">
+          Height: {pokemonInfo.height} in
+        </div>
+        <div className="pokedexCard__size__item">
+          Weight: {pokemonInfo.weight} lb
+        </div>
+      </div>
+    </div>
   );
 };
 
