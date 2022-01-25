@@ -5,8 +5,8 @@ import MenuButton from "../../components/MenuButton/MenuButton";
 const Menu = () => {
   return (
     <div className="menu">
-      <MenuButton text='Pokedex' linkTo='/pokedex' />
-      <MenuButton text='Poke-Team' linkTo='/pokedex' />
+      <MenuButton text="Pokedex" linkTo="/mainpokedex" />
+      <MenuButton text="Poke-Team" linkTo="/mainpokedex" />
     </div>
   );
 };
