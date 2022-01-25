@@ -5,14 +5,24 @@
 .pokemonSize__height {
   display: flex;
   flex-direction: column;
+  padding: 5px 20px;
 }
 .pokemonSize__height__label {
   color: grey;
+  font-size: 12px;
+}
+.pokemonSize__height__number {
+  font-weight: 500;
 }
 .pokemonSize__weight {
   display: flex;
   flex-direction: column;
+  padding: 5px 20px;
 }
 .pokemonSize__weight__label {
   color: grey;
+  font-size: 12px;
+}
+.pokemonSize__weight__number {
+  font-weight: 500;
 }

@@ -5,24 +5,30 @@
   &__height {
     display: flex;
     flex-direction: column;
+    padding: 5px 20px;
 
     &__label {
       color: grey;
+      font-size: 12px;
     }
 
     &__number {
+      font-weight: 500;
     }
   }
 
   &__weight {
     display: flex;
     flex-direction: column;
+    padding: 5px 20px;
 
     &__label {
       color: grey;
+      font-size: 12px;
     }
 
     &__number {
+      font-weight: 500;
     }
   }
 }

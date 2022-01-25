@@ -23,7 +23,7 @@ const PokedexCard = ({ pokemon }) => {
   return (
     <div className="pokedexCard">
       <div className="pokedexCard__inner">
-        <div className="pokedexCard__name">{pokemon.name.toUpperCase()}</div>
+        <div className="pokedexCard__name">{pokemon.name}</div>
         <img
           className="pokedexCard__img"
           src={pokemonInfo ? pokemonInfo.sprites.front_default : ""}
