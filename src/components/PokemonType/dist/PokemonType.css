@@ -1,0 +1,99 @@
+.pokedexCard__types {
+  display: flex;
+}
+.pokedexCard__types__type {
+  padding: 0 10px;
+  margin: 0 10px;
+  border-radius: 20px;
+  color: white;
+}
+.pokedexCard__types .grass {
+  background-color: #26c850;
+  border: 2px solid #137c3e;
+  text-shadow: #6effab 1px 0 10px;
+}
+.pokedexCard__types .poison {
+  background-color: #996ad9;
+  border: 2px solid #602e8c;
+  text-shadow: #d7bcee 1px 0 10px;
+}
+.pokedexCard__types .fire {
+  background-color: #fd4c5a;
+  border: 2px solid #af1f25;
+  text-shadow: #fc7681 1px 0 10px;
+}
+.pokedexCard__types .flying {
+  background-color: #87a2b5;
+  border: 2px solid #7091aa;
+  text-shadow: #b1cfe6 1px 0 10px;
+}
+.pokedexCard__types .water {
+  background-color: #86a8fc;
+  border: 2px solid #1552e2;
+  text-shadow: #5182f7 1px 0 10px;
+}
+.pokedexCard__types .bug {
+  background-color: #3b9950;
+  border: 2px solid #1c4b27;
+  text-shadow: #8beea0 1px 0 10px;
+}
+.pokedexCard__types .normal {
+  background-color: #ca98a7;
+  border: 2px solid #76515c;
+  text-shadow: #ebccd5 1px 0 10px;
+}
+.pokedexCard__types .dark {
+  background-color: #5a5979;
+  border: 2px solid #040706;
+  text-shadow: #b6b5e0 1px 0 10px;
+}
+.pokedexCard__types .electric {
+  background-color: #fbfb72;
+  border: 2px solid #e3e32b;
+  text-shadow: #ffffb2 1px 0 10px;
+}
+.pokedexCard__types .dragon {
+  background-color: #61cad9;
+  border: 2px solid #448b95;
+  text-shadow: #a1dee7 1px 0 10px;
+}
+.pokedexCard__types .fairy {
+  background-color: #e91369;
+  border: 2px solid #971944;
+  text-shadow: #eb6b9e 1px 0 10px;
+}
+.pokedexCard__types .fighting {
+  background-color: #f06138;
+  border: 2px solid #a34426;
+  text-shadow: #f39074 1px 0 10px;
+}
+.pokedexCard__types .ghost {
+  background-color: #906790;
+  border: 2px solid #33336b;
+  text-shadow: #d1a9d1 1px 0 10px;
+}
+.pokedexCard__types .ground {
+  background-color: #6e491f;
+  border: 2px solid #a9702c;
+  text-shadow: #c08a4c 1px 0 10px;
+}
+.pokedexCard__types .ice {
+  background-color: #d8f0fa;
+  border: 2px solid #86d2f5;
+  text-shadow: white 1px 0 10px;
+}
+.pokedexCard__types .psychic {
+  background-color: #f81c91;
+  border: 2px solid #a42a6c;
+  text-shadow: #ff8bc9 1px 0 10px;
+}
+.pokedexCard__types .rock {
+  background-color: #8b3d21;
+  border: 2px solid #48180b;
+  text-shadow: #cc7352 1px 0 10px;
+}
+.pokedexCard__types .steel {
+  background-color: #42bd94;
+  border: 2px solid #5f756d;
+  text-shadow: #79ebc5 1px 0 10px;
+}
