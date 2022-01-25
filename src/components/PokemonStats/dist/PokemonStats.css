@@ -1,0 +1,24 @@
+.pokemonStats {
+  padding-bottom: 5px;
+}
+.pokemonStats__header {
+  font-weight: 500;
+}
+
+.pokemonStats__stat {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+}
+.pokemonStats__stat__name {
+  font-size: 12px;
+}
+.pokemonStats__stat__bar {
+  width: 90px;
+  display: flex;
+  justify-content: flex-end;
+}
+.pokemonStats__stat__bar__value {
+  font-size: 12px;
+}
