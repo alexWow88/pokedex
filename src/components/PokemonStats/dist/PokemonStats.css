@@ -21,10 +21,18 @@
   justify-content: space-between;
   border-radius: 10px;
   border: 1px solid black;
+  position: relative;
+  background-color: #42b2d8;
 }
 .pokemonStats__stat__bar__inner {
   border-radius: 10px;
+  height: 12px;
 }
 .pokemonStats__stat__bar__value {
+  color: white;
+  text-shadow: #002b33 1px 0 3px;
   font-size: 12px;
+  position: absolute;
+  right: 0;
+  top: -3px;
 }
