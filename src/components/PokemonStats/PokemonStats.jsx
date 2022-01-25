@@ -7,14 +7,18 @@ const PokemonStats = ({ pokemonInfo }) => {
       <div className="pokemonStats__header">Base Stats</div>
       {pokemonInfo.stats.map((item) => (
         <div className="pokemonStats__stat">
-          <span className="pokemonStats__stat__name">
+          <div className="pokemonStats__stat__name">
             {item.stat.name.toUpperCase()}
-          </span>
-          <span className="pokemonStats__stat__bar">
-            <span className="pokemonStats__stat__bar__value">
-              {item.base_stat} / 120
-            </span>
-          </span>
+          </div>
+          <div className="pokemonStats__stat__bar">
+            <div
+              className="pokemonStats__stat__bar__inner"
+              style={{ backgroundColor: "red", width: `${item.base_stat}%` }}
+            ></div>
+            <div className="pokemonStats__stat__bar__value">
+              {item.base_stat} / 100
+            </div>
+          </div>
         </div>
       ))}
     </div>
