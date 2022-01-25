@@ -70,45 +70,31 @@
   .pokedexCard__inner__dragon {
     background: content-box
       radial-gradient(
-        rgba(255, 242, 53, 0.753),
-        rgba(255, 230, 10, 0.87),
-        rgb(255, 100, 10),
-        rgb(251, 75, 89),
-        rgb(171, 31, 35)
+        rgb(220, 251, 255),
+        rgb(96, 202, 215),
+        rgb(96, 202, 215),
+        rgb(68, 139, 149),
+        rgb(68, 139, 149)
       );
   }
 
   .pokedexCard__inner__electric {
     background: content-box
       radial-gradient(
-        rgba(255, 242, 53, 0.753),
+        rgba(255, 247, 139, 0.753),
         rgba(255, 230, 10, 0.87),
-        rgb(255, 100, 10),
-        rgb(251, 75, 89),
-        rgb(171, 31, 35)
+        rgb(227, 227, 47),
+        rgb(227, 227, 47),
+        rgb(255, 255, 45)
       );
   }
 
   .pokedexCard__inner__fairy {
-    background: content-box
-      radial-gradient(
-        rgba(255, 242, 53, 0.753),
-        rgba(255, 230, 10, 0.87),
-        rgb(255, 100, 10),
-        rgb(251, 75, 89),
-        rgb(171, 31, 35)
-      );
+    background: content-box radial-gradient(rgb(235, 32, 105), rgb(151, 25, 68));
   }
 
   .pokedexCard__inner__fighting {
-    background: content-box
-      radial-gradient(
-        rgba(255, 242, 53, 0.753),
-        rgba(255, 230, 10, 0.87),
-        rgb(255, 100, 10),
-        rgb(251, 75, 89),
-        rgb(171, 31, 35)
-      );
+    background: content-box radial-gradient(rgb(153, 64, 37), rgb(240, 97, 56));
   }
 
   .pokedexCard__inner__fire {
@@ -122,14 +108,34 @@
       );
   }
 
-  //flying ghost
+  .pokedexCard__inner__flying {
+    background: content-box
+      radial-gradient(rgb(147, 178, 199), rgb(74, 103, 125));
+  }
+
+  .pokedexCard__inner__ghost {
+    background: content-box
+      radial-gradient(rgb(144, 103, 144), rgb(51, 51, 107));
+  }
 
   .pokedexCard__inner__grass {
     background: content-box
       radial-gradient(rgb(183, 206, 189), rgb(39, 202, 79), rgb(20, 123, 61));
   }
 
-  //grass ground ice normal poison psychic rock steel water
+  .pokedexCard__inner__ground {
+    background: content-box
+      radial-gradient(rgb(212, 151, 75), rgb(169, 112, 44) rgb(111, 73, 31));
+  }
+
+  .pokedexCard__inner__ice {
+    background: content-box
+      radial-gradient(
+        rgb(216, 241, 249),
+        rgb(186, 231, 252),
+        rgb(135, 210, 245)
+      );
+  }
 
   .pokedexCard__inner__normal {
     background: content-box
@@ -141,8 +147,47 @@
       );
   }
 
+  .pokedexCard__inner__poison {
+    background: content-box
+      radial-gradient(
+        rgb(198, 154, 252),
+        rgb(156, 105, 217),
+        rgb(94, 45, 136),
+        rgb(63, 28, 94)
+      );
+  }
+
+  .pokedexCard__inner__psychic {
+    background: content-box
+      radial-gradient(
+        rgb(255, 85, 173),
+        rgb(248, 33, 145),
+        rgb(164, 42, 108),
+        rgb(126, 25, 79)
+      );
+  }
+
+  .pokedexCard__inner__poison {
+    background: content-box
+      radial-gradient(
+        rgb(198, 154, 252),
+        rgb(156, 105, 217),
+        rgb(94, 45, 136),
+        rgb(63, 28, 94)
+      );
+  }
+
+  .pokedexCard__inner__rock {
+    background: content-box radial-gradient(rgb(139, 62, 33), rgb(72, 25, 11));
+  }
+
+  .pokedexCard__inner__steel {
+    background: content-box
+      radial-gradient(rgb(66, 189, 148), rgb(95, 117, 109), rgb(66, 189, 148));
+  }
+
   .pokedexCard__inner__water {
     background: content-box
-      radial-gradient(rgb(220, 223, 199), rgb(134, 168, 252));
+      radial-gradient(rgb(22, 81, 226), rgb(134, 168, 252), rgb(22, 81, 226));
   }
 }

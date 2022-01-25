@@ -3,6 +3,7 @@ import "./PokedexCard.scss";
 import { useState, useEffect } from "react";
 import PokemonSize from "../PokemonSize/PokemonSize";
 import PokemonType from "../PokemonType/PokemonType";
+import PokemonStats from "../PokemonStats/PokemonStats";
 
 const PokedexCard = ({ pokemon }) => {
   const [pokemonInfo, setPokemonInfo] = useState(false);
@@ -42,6 +43,7 @@ const PokedexCard = ({ pokemon }) => {
       </div>
       <PokemonType pokemonInfo={pokemonInfo} />
       {pokemonInfo && <PokemonSize pokemonInfo={pokemonInfo} />}
+      {pokemonInfo && <PokemonStats pokemonInfo={pokemonInfo} />}
     </div>
   );
 };
