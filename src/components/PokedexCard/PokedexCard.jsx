@@ -1,6 +1,8 @@
 import React from "react";
 import "./PokedexCard.scss";
 import { useState, useEffect } from "react";
+import PokemonSize from "../PokemonSize/PokemonSize";
+import PokemonType from "../PokemonType/PokemonType";
 
 const PokedexCard = ({ pokemon }) => {
   const [pokemonInfo, setPokemonInfo] = useState(false);
@@ -20,13 +22,26 @@ const PokedexCard = ({ pokemon }) => {
   }, []);
 
   return (
-    <>
-      <div className="pokedexCard">{pokemon.name}</div>
-      <img
-        className="pokedexCard__img"
-        src={pokemonInfo ? pokemonInfo.sprites.front_default : ""}
-      />
-    </>
+    <div className="pokedexCard">
+      <div className="pokedexCard__inner">
+        <div className="pokedexCard__name">{pokemon.name}</div>
+        <img
+          className="pokedexCard__img"
+          src={pokemonInfo ? pokemonInfo.sprites.front_default : ""}
+        />
+      </div>
+      {/* <div className="pokedexCard__types">
+        {pokemonInfo ? (
+          pokemonInfo.types.map((item) => (
+            <div className="pokedexCard__types__type">{item?.type.name}</div>
+          ))
+        ) : (
+          <div></div>
+        )}
+      </div> */}
+      <PokemonType pokemonInfo={pokemonInfo} />
+      {pokemonInfo && <PokemonSize pokemonInfo={pokemonInfo} />}
+    </div>
   );
 };
 
