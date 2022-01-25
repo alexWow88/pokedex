@@ -26,6 +26,14 @@
 .pokedexCard .pokedexCard__inner .pokedexCard__img {
   height: 90%;
 }
+.pokedexCard .pokedexCard__inner__header {
+  display: flex;
+  font-size: 20px;
+  justify-content: space-between;
+  padding: 0 10px;
+  color: white;
+  text-shadow: #0295af 1px 0 10px;
+}
 .pokedexCard .pokedexCard__size {
   display: flex;
   justify-content: center;

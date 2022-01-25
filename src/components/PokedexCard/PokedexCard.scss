@@ -44,6 +44,15 @@
       // object-fit: contain;
       height: 90%;
     }
+
+    &__header {
+      display: flex;
+      font-size: 20px;
+      justify-content: space-between;
+      padding: 0 10px;
+      color: white;
+      text-shadow: rgb(2, 149, 175) 1px 0 10px;
+    }
   }
 
   .pokedexCard__size {

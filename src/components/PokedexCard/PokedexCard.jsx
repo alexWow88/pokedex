@@ -24,7 +24,13 @@ const PokedexCard = ({ pokemon }) => {
   return (
     <div className="pokedexCard">
       <div className="pokedexCard__inner">
-        <div className="pokedexCard__name">{pokemon.name}</div>
+        <div className="pokedexCard__inner__header">
+          <div className="pokedexCard__inner__header__name">{pokemon.name}</div>
+          <div className="pokedexCard__inner__header__id">
+            # {pokemonInfo?.id}
+          </div>
+        </div>
+
         <img
           className="pokedexCard__img"
           src={pokemonInfo ? pokemonInfo.sprites.front_default : ""}
