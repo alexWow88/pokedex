@@ -53,9 +53,16 @@ const Pokedex = () => {
         </div>
         <div className="pokedex-buttons__right">
           <div className="d-pad">
-            <div className="d-pad__vertical"></div>
-            <div className="d-pad__left"></div>
-            <div className="d-pad__left"></div>
+            <div className="d-pad__vertical">
+              <button className="d-pad__vertical__up-arrow"></button>
+              <button className="d-pad__vertical__down-arrow"></button>
+            </div>
+            <div className="d-pad__left">
+              <button className="d-pad__left__arrow"></button>
+            </div>
+            <div className="d-pad__right">
+              <button className="d-pad__right__arrow"></button>
+            </div>
           </div>
         </div>
       </div>

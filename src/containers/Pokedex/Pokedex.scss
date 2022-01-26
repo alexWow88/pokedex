@@ -138,8 +138,6 @@
 
 .pokedex-buttons {
   background-color: red;
-  padding: 10px;
-  margin: 0;
   height: 130px;
   width: 100%;
   border-top: 3px solid black;
@@ -147,6 +145,8 @@
   grid-template-columns: 2fr 1fr;
 
   &__left {
+    padding-top: 10px;
+
     &__top {
       display: flex;
       justify-content: center;
@@ -201,5 +201,54 @@
   }
 
   &__right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .d-pad {
+      display: grid;
+      grid-template-columns: 28px 28px 28px;
+      grid-template-rows: 28px 28px 28px;
+
+      &__vertical {
+        background-color: rgb(51, 51, 51);
+        border-radius: 7px;
+        grid-area: 1 / 2 / 4 / 3;
+      }
+
+      &__left {
+        background-color: rgb(51, 51, 51);
+        border-radius: 7px 0 0 7px;
+        grid-area: 2 / 1 / 3 / 2;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        &__arrow {
+          border-top: 8px solid rgb(51, 51, 51);
+          border-bottom: 8px solid rgb(51, 51, 51);
+
+          border-right: 10px solid rgb(184, 182, 182);
+          border-left: 5px solid rgb(51, 51, 51);
+        }
+      }
+
+      &__right {
+        background-color: rgb(51, 51, 51);
+        border-radius: 0 7px 7px 0;
+        grid-area: 2 / 3 / 3 / 4;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        &__arrow {
+          border-top: 8px solid rgb(51, 51, 51);
+          border-bottom: 8px solid rgb(51, 51, 51);
+
+          border-left: 10px solid rgb(184, 182, 182);
+          border-right: 5px solid rgb(51, 51, 51);
+        }
+      }
+    }
   }
 }
