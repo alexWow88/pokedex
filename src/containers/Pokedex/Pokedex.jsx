@@ -36,9 +36,29 @@ const Pokedex = () => {
         <div className="pokedex-top__center-bottom"></div>
         <div className="pokedex-top__right-bottom"></div>
       </div>
-      {pokedexList
+      {/* {pokedexList
         ? pokedexList.map((pokemon) => <PokedexCard pokemon={pokemon} />)
-        : " "}
+        : " "} */}
+      {pokedexList ? <PokedexCard pokemon={pokedexList[0]} /> : " "}
+      <div className="pokedex-buttons">
+        <div className="pokedex-buttons__left">
+          <div className="pokedex-buttons__left__top">
+            <div className="pokedex-buttons__left__top__circle"></div>
+            <button className="pokedex-buttons__left__top__green"></button>
+            <button className="pokedex-buttons__left__top__red"></button>
+          </div>
+          <div className="pokedex-buttons__left__bottom">
+            <input type="text" className="searchbar" />
+          </div>
+        </div>
+        <div className="pokedex-buttons__right">
+          <div className="d-pad">
+            <div className="d-pad__vertical"></div>
+            <div className="d-pad__left"></div>
+            <div className="d-pad__left"></div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

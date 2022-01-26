@@ -6,6 +6,8 @@
 .pokedex {
   color: yellow;
   background-color: #c70848;
+  height: 100vh;
+  width: 100%;
 }
 
 .pokedex-top {
@@ -104,4 +106,52 @@
 .pokedex-top__center-bottom {
   background: linear-gradient(to bottom right, red 0%, red 48%, black 48%, black 52%, transparent 52%, transparent 100%);
   grid-area: 2/2/3/3;
+}
+
+.pokedex-buttons {
+  background-color: red;
+  padding: 10px;
+  margin: 0;
+  height: 130px;
+  width: 100%;
+  border-top: 3px solid black;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+.pokedex-buttons__left__top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pokedex-buttons__left__top__circle {
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  background-color: blue;
+  border: 1px solid black;
+}
+.pokedex-buttons__left__top__green {
+  border-radius: 10px;
+  margin: 0 5px 0 10px;
+  height: 12px;
+  width: 65px;
+  background-color: #04cf04;
+}
+.pokedex-buttons__left__top__red {
+  border-radius: 10px;
+  margin: 0 10px 0 5px;
+  height: 12px;
+  width: 65px;
+  background-color: #cf0b04;
+}
+.pokedex-buttons__left__bottom {
+  padding-top: 10px;
+}
+.pokedex-buttons__left__bottom .searchbar {
+  background-color: #f7f759;
+  border-radius: 10px;
+  font-size: 18px;
+  height: 18px;
+  padding: 10px;
+  text-align: center;
 }
