@@ -170,6 +170,48 @@
   background-color: #333333;
   border-radius: 7px;
   grid-area: 1/2/4/3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.pokedex-buttons__right .d-pad__vertical__up-arrow {
+  width: 0;
+  border-top: 5px solid #333333;
+  border-bottom: 10px solid #b8b6b6;
+  border-right: 8px solid #333333;
+  border-left: 8px solid #333333;
+  animation: glowing-up-arrow 2000ms infinite;
+}
+@keyframes glowing-up-arrow {
+  0% {
+    border-bottom: 10px solid #b8b6b6;
+  }
+  50% {
+    border-bottom: 10px solid white;
+  }
+  100% {
+    border-bottom: 10px solid #b8b6b6;
+  }
+}
+.pokedex-buttons__right .d-pad__vertical__down-arrow {
+  width: 0;
+  border-bottom: 5px solid #333333;
+  border-top: 10px solid #b8b6b6;
+  border-right: 8px solid #333333;
+  border-left: 8px solid #333333;
+  animation: glowing-down-arrow 2000ms infinite;
+}
+@keyframes glowing-down-arrow {
+  0% {
+    border-top: 10px solid #b8b6b6;
+  }
+  50% {
+    border-top: 10px solid white;
+  }
+  100% {
+    border-top: 10px solid #b8b6b6;
+  }
 }
 .pokedex-buttons__right .d-pad__left {
   background-color: #333333;
@@ -184,6 +226,18 @@
   border-bottom: 8px solid #333333;
   border-right: 10px solid #b8b6b6;
   border-left: 5px solid #333333;
+  animation: glowing-left-arrow 2000ms infinite;
+}
+@keyframes glowing-left-arrow {
+  0% {
+    border-right: 10px solid #b8b6b6;
+  }
+  50% {
+    border-right: 10px solid white;
+  }
+  100% {
+    border-right: 10px solid #b8b6b6;
+  }
 }
 .pokedex-buttons__right .d-pad__right {
   background-color: #333333;
@@ -198,4 +252,16 @@
   border-bottom: 8px solid #333333;
   border-left: 10px solid #b8b6b6;
   border-right: 5px solid #333333;
+  animation: glowing-right-arrow 2000ms infinite;
+}
+@keyframes glowing-right-arrow {
+  0% {
+    border-left: 10px solid #b8b6b6;
+  }
+  50% {
+    border-left: 10px solid white;
+  }
+  100% {
+    border-left: 10px solid #b8b6b6;
+  }
 }
