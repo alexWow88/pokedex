@@ -127,7 +127,7 @@
   border-radius: 50%;
   height: 60px;
   width: 60px;
-  background-color: blue;
+  background: content-box radial-gradient(#0e60f8, #060ae9, #0213ac, #0804ff, white);
   border: 1px solid black;
 }
 .pokedex-buttons__left__top__green {
