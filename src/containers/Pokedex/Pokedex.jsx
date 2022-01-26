@@ -8,7 +8,9 @@ const Pokedex = () => {
   const [currentPokemon, setCurrentPokemon] = useState(0);
 
   const handleRightClick = () => {
-    setCurrentPokemon(currentPokemon + 1);
+    if (currentPokemon <= 1116) {
+      setCurrentPokemon(currentPokemon + 1);
+    }
   };
 
   const handleLeftClick = () => {
@@ -18,7 +20,7 @@ const Pokedex = () => {
   };
 
   const fetchPokedex = () => {
-    fetch(`https://pokeapi.co/api/v2/pokemon/
+    fetch(`https://pokeapi.co/api/v2/pokemon?limit=1118
     `)
       .then((response) => response.json())
       .then((jsonResponse) => {
