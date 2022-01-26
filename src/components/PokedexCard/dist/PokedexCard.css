@@ -76,7 +76,7 @@
   background: content-box radial-gradient(#b7cebd, #27ca4f, #147b3d);
 }
 .pokedexCard .pokedexCard__inner__ground {
-  background: content-box radial-gradient(#d4974b, #a9702c #6f491f);
+  background: content-box radial-gradient(#d4974b, #a9702c, #6f491f);
 }
 .pokedexCard .pokedexCard__inner__ice {
   background: content-box radial-gradient(#d8f1f9, #bae7fc, #87d2f5);

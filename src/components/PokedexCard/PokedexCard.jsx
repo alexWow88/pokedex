@@ -5,11 +5,11 @@ import PokemonSize from "../PokemonSize/PokemonSize";
 import PokemonType from "../PokemonType/PokemonType";
 import PokemonStats from "../PokemonStats/PokemonStats";
 
-const PokedexCard = ({ pokemon }) => {
+const PokedexCard = ({ currentPokemon, pokemon }) => {
   const [pokemonInfo, setPokemonInfo] = useState(false);
 
   const fetchPokemonInfo = () => {
-    fetch(`${pokemon.url}`)
+    fetch(`${pokemon[currentPokemon].url}`)
       .then((response) => response.json())
       .then((jsonResponse) => {
         console.log(jsonResponse);
@@ -20,7 +20,7 @@ const PokedexCard = ({ pokemon }) => {
 
   useEffect(() => {
     fetchPokemonInfo();
-  }, []);
+  }, [currentPokemon]);
 
   return (
     <div className="pokedexCard">
@@ -30,7 +30,9 @@ const PokedexCard = ({ pokemon }) => {
         }`}
       >
         <div className="pokedexCard__inner__header">
-          <div className="pokedexCard__inner__header__name">{pokemon.name}</div>
+          <div className="pokedexCard__inner__header__name">
+            {pokemon[currentPokemon].name}
+          </div>
           <div className="pokedexCard__inner__header__id">
             # {pokemonInfo?.id}
           </div>
